@@ -1,0 +1,29 @@
+#include <iostream>
+#include<iterator>
+#include<list>
+#include<algorithm>
+#include<vector>
+#include<stdio.h>
+
+using namespace std;
+
+int main() {
+	int m,n,t,k,l;
+	list<int>v,v1;
+	cin>>n>>m;
+	for(int i=0;i<n;i++)
+	{
+	cin>>arr[i];
+	v.insert(arr[i]);
+	}
+	for(j=0;j<m;j++)
+	{
+	cin>>brr[j];
+	v1.insert(brr[i]);
+	}
+	set_intersection(v.begin(),v.end(),v1.begin(),v1.end(),ostream_iterator<int>(cout," "));
+	set_union(v.begin(),v.end(),v1.begin(),v1.end(),ostream_iterator<int>(cout," "));
+	
+	
+	return 0;
+}
