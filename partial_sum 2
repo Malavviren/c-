@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <list>
+#include <set>
+#include <map>
+#include <string>
+#include <algorithm>
+#include <iterator>
+#include <functional>
+#include <numeric>
+
+using namespace std;
+int main()
+{
+    int i,j,k,l,m,n,sum[10001];
+    vector<int>v;
+    int arr[10001];
+    cin>>n>>k;
+    for(i=0;i<n;i++)
+    {
+
+        cin>>arr[i];
+        v.push_back(arr[i]);
+    }
+    partial_sum(v.begin(),v.end(),sum);
+    for(j=0;j<n;j++)
+    {
+    cout<<arr[j]<<" ";
+    }
+
+}
